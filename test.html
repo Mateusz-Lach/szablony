@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        html{
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.4em;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            color: #111;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        h1
+        {
+            font-size: 1.6em;
+            margin: 1%;
+            padding: 0;
+            text-align: center;
+        }
+        .header{
+            width: 100%;
+            background-color: #FFD800;
+        }
+        .photo
+        {
+            width: 46%;
+            padding: 2%;
+        }
+        .photo img
+        {
+            width: 100%;
+        }
+        .content{
+            width: 48%;
+            padding: 1%;
+            padding-top: 3%;
+        }
+        .footer{
+            width: 96%;
+            background-color: #000;
+            padding: 2%;
+        }
+        .track-list
+        {
+            list-style-type: upper-alpha;
+            font-weight: bolder;
+        }
+        .track-list li
+        {
+            padding-top: 2%;
+        }
+        .song-list
+        {
+            font-weight: normal;
+        }
+        .song-list li
+        {
+            margin-top: 0.5%;
+            padding: 0;
+        }
+        .description{
+            padding-left: 8%;
+            padding-right: 8%;
+        }
+        .copyrights
+        {
+            font-size: 0.8em;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #777;
+        }
+        .icons{
+            width: 100%;
+            padding-top: 2%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icons img{
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        .thin-icon
+        {
+            height: 21px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Capital Bra - Berlin Lebt | Winyl</h1>
+    </div>
+    <div class="photo">
+        <img src="Capital-Bra.jpg" alt="img">
+    </div>
+    <div class="content">
+        <strong>Lista utworów:</strong>
+        <ol class="track-list">
+            <li><br>
+                <ol class="song-list">
+                    <li>Berlin Lebt</li>
+                    <li>Kennzeichen B-TK</li>
+                    <li>Giselle Bündchen</li>
+                </ol>
+            </li>
+            <li><br>
+                <ol class="song-list">
+                    <li>Neymar</li>
+                    <li>5 Songs In Einer Nacht</li>
+                    <li>Gutes Herz</li>
+                    <li>Panzer, Tiger</li>
+                </ol>
+            </li>
+            <li><br>
+                <ol class="song-list">
+                    <li>Ballert</li>
+                    <li>Baba Flow</li>
+                    <li>Darby</li>
+                    <li>One Night Stand</li>
+                </ol>
+            </li>
+            <li><br>
+                <ol class="song-list">
+                    <li>Packen</li>
+                    <li>Glaub Mir</li>
+                    <li>Meine Welt</li>
+                    <li>Wann Dann</li>
+                </ol>
+            </li>
+        </ol>
+        <strong>Opis:</strong>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet tellus ut eros vestibulum, eget congue odio dictum. Ut sed nulla lobortis, sollicitudin arcu eu, vulputate purus. Maecenas quis purus sapien. Sed diam mi, cursus sit amet tortor id, fermentum efficitur neque. Quisque erat nibh, egestas a erat quis, efficitur sagittis felis. Quisque et nunc eu sapien elementum pretium a sed erat. Ut sed ultrices diam. Nullam ut ligula magna.
+            <br><br>
+            Phasellus convallis euismod orci, et ullamcorper nibh luctus eget. Fusce porttitor nunc nec dictum dignissim. Mauris eu sem tristique, dignissim libero sed, varius ex. Fusce lacus lectus, tempor ut arcu vitae, bibendum mollis diam. Aenean et nibh vel magna scelerisque pellentesque vel faucibus justo. Sed porttitor dui enim, ut venenatis odio congue ac. Nullam vel lacus pharetra, vulputate ex non, aliquam nisl. Sed at luctus tellus, in vestibulum ipsum. Praesent bibendum sed erat non consectetur. Vestibulum sem lacus, porttitor id efficitur vitae, ullamcorper quis elit. In mauris nibh, efficitur vitae condimentum quis, sodales vel orci.
+        </p>
+    </div>
+    <div class="footer">
+        <p class="copyrights">© 2024 KolekcjonerRapu.pl - All rights reserved.</p>
+        <div class="icons">
+            <img src="icons/ups-ico.png" alt="icon">
+            <img src="icons/paczkomat-ico.png" alt="icon">
+            <img src="icons/inpost-ico.png" alt="icon">
+            <img src="icons/pocztapolska-ico.png" alt="icon" class="thin-icon">
+        </div>
+    </div>
+</body>
+</html>
