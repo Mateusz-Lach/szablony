@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+      .description
+      {
+      	width: 100%;
+      	display: flex;
+        flex-wrap: wrap;
+      	margin: 0;
+      	padding: 0;
+      }
+      body
+      {
+        display: flex;
+        flex-wrap: wrap;
+      }
+        @media(min-width: 1200px) {
+            html{
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.4em;
+            }
+            #user_field{
+                margin: 0;
+                padding: 0;
+                color: #111;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            h1
+            {
+                font-size: 1.9em;
+                margin: 1%;
+                padding: 0;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: -0.04em;
+
+            }
+            .header{
+                width: 100%;
+                height: 200px;
+                background-color: #FFD800;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                border-top-left-radius: 40px;
+                border-top-right-radius: 40px;
+            }
+            .logo{
+                position: absolute;
+                width: 190px;
+                height: 190px;
+                right: 5%;
+            }
+            .photo
+            {
+                width: 46%;
+                padding: 2%;
+            }
+            .photo img
+            {
+                width: 100%;
+            }
+            .content{
+                width: 48%;
+                padding: 1%;
+                padding-top: 3%;
+            }
+            .footer{
+                width: 96%;
+                background-color: #000;
+                padding: 2%;
+                display: flex;
+                flex-wrap: wrap;
+                border-bottom-left-radius: 40px;
+                border-bottom-right-radius: 40px;
+            }
+            .track-list
+            {
+                list-style-type: upper-alpha;
+                font-weight: bolder;
+            }
+            .track-list li
+            {
+                padding-top: 2%;
+            }
+            .song-list
+            {
+                font-weight: normal;
+            }
+            .song-list li
+            {
+                margin-top: 0.5%;
+                padding: 0;
+            }
+            .copyrights
+            {
+                font-size: 0.8em;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                color: #777;
+            }
+            .icons{
+                width: 100%;
+                padding-top: 2%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .icons img{
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+            .thin-icon
+            {
+                height: 21px;
+            }
+            .footer-info-1{
+                width: 30%;
+            }
+            .footer-info-2{
+                width: 40%;
+            }
+        }
+        @media (min-width:601px) and (max-width: 1199px)
+        {
+            html
+            {
+                width: 100%;
+                height: 100%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.2em;
+            }
+            #user_field{
+                min-height: 100%;
+                margin: 0;
+                padding: 0;
+                color: #111;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            h1
+            {
+                font-size: 1.4em;
+                margin: 1%;
+                padding: 0;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: -0.04em;
+
+            }
+            .header{
+                width: 100%;
+                height: 160px;
+                background-color: #FFD800;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                border-top-left-radius: 40px;
+                border-top-right-radius: 40px;
+            }
+            .logo{
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                right: 4%;
+            }
+            .photo
+            {
+                width: 46%;
+                padding: 2%;
+            }
+            .photo img
+            {
+                width: 100%;
+            }
+            .content{
+                width: 48%;
+                padding: 1%;
+                padding-top: 3%;
+            }
+            .track-list
+            {
+                list-style-type: upper-alpha;
+                font-weight: bolder;
+            }
+            .track-list li
+            {
+                padding-top: 2%;
+            }
+            .song-list
+            {
+                font-weight: normal;
+            }
+            .song-list li
+            {
+                margin-top: 0.5%;
+                padding: 0;
+            }
+            .footer{
+                width: 96%;
+                background-color: #000;
+                padding: 2%;
+                display: flex;
+                flex-wrap: wrap;
+                border-bottom-left-radius: 40px;
+                border-bottom-right-radius: 40px;
+            }
+            .copyrights
+            {
+                font-size: 0.8em;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                color: #777;
+            }
+            .icons{
+                width: 100%;
+                padding-top: 2%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .icons img{
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+            .thin-icon
+            {
+                height: 21px;
+            }
+            .footer-info-1{
+                width: 30%;
+            }
+            .footer-info-2{
+                width: 40%;
+            }
+        }
+        @media (max-width: 600px)  {
+            html{
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            }
+            #user_field{
+                margin: 0;
+                padding: 0;
+                color: #111;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            h1
+            {
+                font-size: 1.4em;
+                margin: 1%;
+                padding: 0;
+                padding-bottom: 3%;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: -0.04em;
+
+            }
+            .header{
+                padding-top: 5%;
+                padding-bottom: 3%;
+                width: 100%;
+                background-color: #FFD800;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                border-top-left-radius: 1.8em;
+                border-top-right-radius: 1.8em;
+            }
+            .logo{
+                width: 300px;
+                height: 300px;
+            }
+            .photo
+            {
+                width: 94%;
+                padding: 3%;
+            }
+            .photo img
+            {
+                width: 100%;
+            }
+            .content{
+                width: 98%;
+                padding: 1%;
+                padding-top: 3%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .content strong
+            {
+                width: 100%;
+                text-align: center;
+            }
+            .track-list
+            {
+                list-style-type: upper-alpha;
+                font-weight: bolder;
+            }
+            .track-list li
+            {
+                padding-top: 2%;
+            }
+            .song-list
+            {
+                font-weight: normal;
+            }
+            .song-list li
+            {
+                margin-top: 0.5%;
+                padding: 0;
+            }
+            .footer{
+                width: 96%;
+                background-color: #000;
+                padding: 2%;
+                display: flex;
+                flex-wrap: wrap;
+                border-bottom-left-radius: 1.8em;
+                border-bottom-right-radius: 1.8em;
+            }
+            .copyrights
+            {
+                font-size: 0.8em;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                color: #777;
+            }
+            .footer-info-1, .footer-info-2{
+                width: 100%;
+                padding-bottom: 3%;
+            }
+            .icons{
+                width: 100%;
+                padding-top: 2%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .icons img{
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+            .thin-icon
+            {
+                height: 21px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>[nazwa_aukcji]</h1>
+        <img src="https://technologieinternetowe.pl/img/logo.png" alt="logo" class="logo">
+    </div>
+    <div class="photo">
+        <img src="[obrazek]" alt="img">
+    </div>
+    <div class="content">
+        [opis]
+    </div>
+    <div class="footer">
+        <div class="footer-info-1">
+
+        </div>
+        <div class="footer-info-2">
+            <p class="copyrights">KolekcjonerRapu.pl - All rights reserved.</p>
+            <br>
+            <p class="copyrights">Worldwide Shipping</p>
+        </div>
+        <div class="footer-info-1">
+        </div>
+        <div class="icons">
+            <img src="https://technologieinternetowe.pl/img/dpd-ico.png" alt="icon">
+            <img src="https://technologieinternetowe.pl/img/ups-ico.png" alt="icon">
+            <img src="https://technologieinternetowe.pl/img/paczkomat-ico.png" alt="icon">
+            <img src="https://technologieinternetowe.pl/img/inpost-ico.png" alt="icon">
+            <img src="https://technologieinternetowe.pl/img/pocztapolska-ico.png" alt="icon" class="thin-icon">
+        </div>
+    </div>
+</body>
+</html>
