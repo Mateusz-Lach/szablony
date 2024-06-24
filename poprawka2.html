@@ -13,6 +13,11 @@
       	margin: 0;
       	padding: 0;
       }
+      .x-item-description-child
+      {
+        display: flex;
+        flex-wrap: wrap;
+      }
       body
       {
         display: flex;
@@ -354,13 +359,15 @@
                 justify-content: center;
                 align-items: center;
             }
-            .icons img{
+            .icon{
                 margin-left: 2%;
                 margin-right: 2%;
+                width: 30px;
             }
             .thin-icon
             {
-                height: 21px;
+                height: 10px;
+                width: 57px;
             }
         }
     </style>
@@ -388,10 +395,10 @@
         <div class="footer-info-1">
         </div>
         <div class="icons">
-            <img src="https://technologieinternetowe.pl/img/dpd-ico.png" alt="icon">
-            <img src="https://technologieinternetowe.pl/img/ups-ico.png" alt="icon">
-            <img src="https://technologieinternetowe.pl/img/paczkomat-ico.png" alt="icon">
-            <img src="https://technologieinternetowe.pl/img/inpost-ico.png" alt="icon">
+            <img src="https://technologieinternetowe.pl/img/dpd-ico.png" alt="icon" class="icon">
+            <img src="https://technologieinternetowe.pl/img/ups-ico.png" alt="icon" class="icon">
+            <img src="https://technologieinternetowe.pl/img/paczkomat-ico.png" alt="icon" class="icon">
+            <img src="https://technologieinternetowe.pl/img/inpost-ico.png" alt="icon" class="icon">
             <img src="https://technologieinternetowe.pl/img/pocztapolska-ico.png" alt="icon" class="thin-icon">
         </div>
     </div>
