@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        #main-container
+        {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 1.5em;
+        }
+        #header{
+            width: 100%;
+        }
+        #content
+        {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .banner2
+        {
+            width: 100%;
+        }
+        #footer
+        {
+            width: 100%;
+        }
+        #gallery
+        {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .big-img
+        {
+            width: 100%;
+        }
+        .small-img
+        {
+            width: calc(100%/3);
+        }
+        #parameters
+        {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+        #parameters img{
+            width: 100%;
+            height: max-content;
+        }
+        p{
+            width: 96%;
+            padding: 0;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-top: 3%;
+            margin-bottom: 1%;
+        }
+        .desc
+        {
+            width: 90%;
+            padding: 0;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 3%;
+            margin-bottom: 1%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <img src="https://i.postimg.cc/KzPYj0NZ/1.png" alt="banner" id="header">
+        <div id="content">
+            <div id="gallery">
+                <img src="../Capital-Bra.jpg" alt="big image" class="big-img">
+                <img src="../logo.png" alt="small image" class="small-img">
+                <img src="../logo.png" alt="small image" class="small-img">
+                <img src="../logo.png" alt="small image" class="small-img">
+            </div>
+            <div id="parameters">
+                <img src="https://i.postimg.cc/rmBk2nwN/3.png" alt="parameters">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor eleifend odio, a suscipit mi ornare at. Vivamus viverra convallis justo, id fringilla nunc varius a. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur ornare pharetra tellus, eu sagittis ex elementum ac. Proin id vestibulum enim. Fusce rutrum velit ut condimentum ultricies. Sed eu ligula neque. Maecenas viverra commodo nibh tempus aliquet. Donec dapibus tempor leo, id lacinia turpis fringilla id</p>
+            </div>
+        </div>
+        <div id="content">
+            <img src="https://i.postimg.cc/xT9ZNDhb/4.png" alt="description" class="banner2">
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor eleifend odio, a suscipit mi ornare at. Vivamus viverra convallis justo, id fringilla nunc varius a. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur ornare pharetra tellus, eu sagittis ex elementum ac. Proin id vestibulum enim. Fusce rutrum velit ut condimentum ultricies. Sed eu ligula neque. Maecenas viverra commodo nibh tempus aliquet. Donec dapibus tempor leo, id lacinia turpis fringilla id
+                <br><br>
+                Phasellus posuere elit ut dolor lacinia, in viverra quam ornare. Aliquam felis felis, pharetra a nisl non, lacinia sollicitudin est. Nunc euismod neque vitae risus porttitor varius. Phasellus vel sem dui. Sed semper tortor id tempor faucibus. Donec tincidunt ultrices porta. Maecenas lacinia enim est, vel consequat elit pretium nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean lacinia pretium vehicula. Integer vestibulum nulla eu aliquet eleifend. Duis commodo, leo quis commodo rhoncus, libero dolor vestibulum massa, vitae faucibus purus velit in elit. Nam et tincidunt nunc, id vehicula diam. Aenean luctus turpis eget leo vulputate, a elementum arcu ultricies. Suspendisse enim neque, pulvinar nec vestibulum at, lacinia eu dolor. Sed ut est ligula.
+
+            </p>
+        </div>
+        <img src="https://i.postimg.cc/DwJP8xvX/5.png" alt="categories" class="banner2">
+        <img src="https://i.postimg.cc/Y00mTSjW/6.png" alt="brands" class="banner2">
+        <img src="https://i.postimg.cc/L8tQyfNJ/2.png" alt="footer" id="footer">
+    </div>
+</body>
+</html>

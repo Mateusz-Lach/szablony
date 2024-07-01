@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        #main-container
+        {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 1.5em;
+        }
+        #header{
+            width: 100%;
+        }
+        #content
+        {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .banner2
+        {
+            width: 100%;
+        }
+        #footer
+        {
+            width: 100%;
+        }
+        #gallery
+        {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .big-img
+        {
+            width: 100%;
+        }
+        .small-img
+        {
+            width: calc(100%/3);
+        }
+        #parameters
+        {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+        #parameters img{
+            width: 100%;
+            height: max-content;
+        }
+        p{
+            width: 96%;
+            padding: 0;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-top: 3%;
+            margin-bottom: 1%;
+        }
+        .desc
+        {
+            width: 90%;
+            padding: 0;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 3%;
+            margin-bottom: 1%;
+        }
+        .gallery_image_0, .gallery_image_1, .gallery_image_2, .gallery_image_3{
+            width: calc(100%/3);
+        }
+        .gallery_image_0 img, .gallery_image_1 img, .gallery_image_2 img, .gallery_image_3 img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <img src="https://i.postimg.cc/KzPYj0NZ/1.png" alt="banner" id="header">
+        <div id="content">
+            <div id="gallery">
+                <img src="[obrazek]" alt="big image" class="big-img">
+                [dodatkowe_obrazki]
+            </div>
+            <div id="parameters">
+                <img src="https://i.postimg.cc/rmBk2nwN/3.png" alt="parameters">
+                <p>[opis_dodatkowy1]</p>
+            </div>
+        </div>
+        <div id="content">
+            <img src="https://i.postimg.cc/xT9ZNDhb/4.png" alt="description" class="banner2">
+            <p class="desc">
+              [opis]
+            </p>
+        </div>
+        <img src="https://i.postimg.cc/DwJP8xvX/5.png" alt="categories" class="banner2">
+        <img src="https://i.postimg.cc/Y00mTSjW/6.png" alt="brands" class="banner2">
+        <img src="https://i.postimg.cc/L8tQyfNJ/2.png" alt="footer" id="footer">
+    </div>
+</body>
+</html>
