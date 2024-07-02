@@ -17,6 +17,7 @@
             height: 100%;
             display: flex;
             flex-wrap: wrap;
+            align-content: flex-start;
             font-size: 1.5em;
         }
         #header{
@@ -31,6 +32,7 @@
         .banner2
         {
             width: 100%;
+            height: min-content;
         }
         #footer
         {
@@ -83,8 +85,127 @@
         .gallery_image_0, .gallery_image_1, .gallery_image_2, .gallery_image_3{
             width: calc(100%/3);
         }
+        .gallery_image_4, .gallery_image_5, .gallery_image_6, .gallery_image_7, .gallery_image_8, .gallery_image_9, .gallery_image_10, .gallery_image_11, .gallery_image_12, .gallery_image_13, .gallery_image_14, .gallery_image_15, .gallery_image_16, .gallery_image_17, .gallery_image_18, .gallery_image_19, .gallery_image_20
+        {
+            display: none;
+        }
         .gallery_image_0 img, .gallery_image_1 img, .gallery_image_2 img, .gallery_image_3 img{
             width: 100%;
+        }
+        #slider-categories
+        {
+            overflow: hidden;
+        }
+        #slider-categories figure{
+            position: relative;
+            width: 600%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider1 infinite;
+
+        }
+        #slider-categories figure img{
+            float: left;
+            width: calc(100%/6);
+        }
+        #slider-brands {
+            overflow: hidden;
+        }
+        #slider-brands figure{
+            position: relative;
+            width: 800%;
+            margin: 0;
+            left: 0;
+            animation: 26s slider2 infinite;
+
+        }
+        #slider-brands figure img{
+            float: left;
+            width: 12.5%;
+        }
+        @keyframes slider1 
+        {
+            0% {
+                left: -500%;
+            }
+            16% {
+                left: -400%;
+            }
+            20% {
+                left: -400%;
+            }
+            36% {
+                left: -300%;
+            }
+            40% {
+                left: -300%;
+            }
+            56% {
+                left: -200%;
+            }
+            60% {
+                left: -200%;
+            }
+            76% {
+                left: -100%;
+            }
+            80% {
+                left: -100%;
+            }
+            96% {
+                left: 0;
+            }
+            100% {
+                left: 0;
+            }
+        }
+        @keyframes slider2
+        {
+            0% {
+                left: 0;
+            }
+            10% {
+                left: 0;
+            }
+            14.5% {
+                left: -100%;
+            }
+            24.5% {
+                left: -100%;
+            }
+            29% {
+                left: -200%;
+            }
+            39% {
+                left: -200%;
+            }
+            43.5% {
+                left: -300%;
+            }
+            53.5% {
+                left: -300%;
+            }
+            58% {
+                left: -400%;
+            }
+            68% {
+                left: -400%;
+            }
+            72.5% {
+                left: -500%;
+            }
+            82.5% {
+                left: -500%;
+            }
+            87% {
+                left: -600%;
+            }
+            97% {
+                left: -600%;
+            }
+            100% {
+                left: -700%;
+            }
         }
     </style>
 </head>
@@ -107,8 +228,30 @@
               [opis]
             </p>
         </div>
-        <img src="https://i.postimg.cc/DwJP8xvX/5.png" alt="categories" class="banner2">
-        <img src="https://i.postimg.cc/Y00mTSjW/6.png" alt="brands" class="banner2">
+        <img src="https://i.postimg.cc/JhfPdn7K/categories.png" class="banner2">
+        <div id="slider-categories">
+            <figure>
+                <img src="https://i.postimg.cc/CxH8Vx4m/bbs.png" alt="">
+                <img src="https://i.postimg.cc/5yCHK405/clothing.png" alt="">
+                <img src="https://i.postimg.cc/66ymcyVs/other.png" alt="">
+                <img src="https://i.postimg.cc/2jMXKrT1/parts.png" alt="">
+                <img src="https://i.postimg.cc/tC6m0wm2/tactical.png" alt="">
+                <img src="https://i.postimg.cc/CxH8Vx4m/bbs.png" alt="">
+            </figure>
+        </div>
+        <img src="https://i.postimg.cc/KjYt8SJC/brands.png" alt="brands" class="banner2">
+        <div id="slider-brands">
+            <figure>
+                <img src="https://i.postimg.cc/Dwm6vs8B/cyma.png" alt="">
+                <img src="https://i.postimg.cc/BvTK4Qcm/electro.png" alt="">
+                <img src="https://i.postimg.cc/W3fbPQK9/gfc.png" alt="">
+                <img src="https://i.postimg.cc/C1Zddhjy/primal.png" alt="">
+                <img src="https://i.postimg.cc/hPRhPqvw/specna.png" alt="">
+                <img src="https://i.postimg.cc/P5txYzmQ/theta.png" alt="">
+                <img src="https://i.postimg.cc/CxmKNB7T/ultimate.png" alt="">
+                <img src="https://i.postimg.cc/Dwm6vs8B/cyma.png" alt="">
+            </figure>
+        </div>
         <img src="https://i.postimg.cc/L8tQyfNJ/2.png" alt="footer" id="footer">
     </div>
 </body>
