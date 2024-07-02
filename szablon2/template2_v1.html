@@ -5,11 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        html, body{
-            width: 100%;
-            height: 100%;
-            padding: 0;
-            margin: 0;
+        @media(min-width: 1000px)
+        {
+            #main-container
+            {
+                font-size: 1.5em;
+            }
+            #header{
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                margin-bottom: 20px;
+            }
+            #footer{
+                border-bottom-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+            }
+            #parameters img{
+                border-radius: 30px;
+            }
+        }
+        @media (max-width:999px) {
+            #main-container
+            {
+                font-size: 1em;
+            }
+            #header{
+                border-top-left-radius: 35px;
+                border-top-right-radius: 35px;
+                margin-bottom: 15px;
+            }
+            #footer{
+                border-bottom-left-radius: 35px;
+                border-bottom-right-radius: 35px;
+            }
+            #parameters img{
+                border-radius: 20px;
+            }
         }
         #main-container
         {
@@ -18,7 +49,12 @@
             display: flex;
             flex-wrap: wrap;
             align-content: flex-start;
-            font-size: 1.5em;
+        }
+        html, body{
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
         }
         #header{
             width: 100%;
@@ -44,10 +80,12 @@
             height: 100%;
             display: flex;
             flex-wrap: wrap;
+            align-content: flex-start;
         }
         .big-img
         {
             width: 100%;
+            height: min-content;
         }
         .small-img
         {
@@ -55,7 +93,8 @@
         }
         #parameters
         {
-            width: 50%;
+            width: 49%;
+            margin-left: 1%;
             height: 100%;
             display: flex;
             flex-wrap: wrap;
@@ -80,7 +119,7 @@
             margin-left: 5%;
             margin-right: 5%;
             margin-top: 3%;
-            margin-bottom: 1%;
+            margin-bottom: 3%;
         }
         .gallery_image_0, .gallery_image_1, .gallery_image_2, .gallery_image_3{
             width: calc(100%/3);
@@ -211,7 +250,7 @@
 </head>
 <body>
     <div id="main-container">
-        <img src="https://i.postimg.cc/KzPYj0NZ/1.png" alt="banner" id="header">
+        <img src="https://i.postimg.cc/Jz8TYXGn/download.jpg" alt="banner" id="header">
         <div id="content">
             <div id="gallery">
                 <img src="[obrazek]" alt="big image" class="big-img">
